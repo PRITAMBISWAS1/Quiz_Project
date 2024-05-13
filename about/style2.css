@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 62.5%;
+	color: #444;
+	line-height: 1.7;
+	scroll-behavior: smooth;
+}
+
+/*#########################################################################*/
+/*.............text-color..............*/
+	.text-red{
+		color: #e63946;
+	}
+
+	.text-white{
+		color: #f4f4f4;
+	}
+
+	.text-black{
+		color: #333;
+	}
+
+	.text-gray{
+		color: #555;
+	}
+/*.............text-color..............*/
+
+/*...............font-size.............*/
+	.navbar .logo{
+			font-size: 1.5rem;
+	}
+
+	li.nav-item{
+		font-size: 1rem;
+	}
+/*...............font-size.............*/
+
+/*................container................*/
+		.container{
+			max-width: 65rem;
+			width: 85%;
+			margin: 0 auto;
+		}
+/*................container................*/
+/*########################################################################*/
+
+/*..............Navbar start...............*/
+	.navbar{
+		background: #263238;
+	}
+
+	.navbar::after{
+		content: " ";
+		display: block;
+		clear: both;
+	}
+
+	.navbar a{
+		/*color: white;*/
+		text-decoration: none;
+
+	}
+
+	.navbar a:hover{
+		text-decoration: underline solid white;
+	}
+
+	.navbar a:focus{
+		color: #555;
+	}
+
+	/*for WT*/
+	.navbar .logo{
+		float: left;
+		color: white;
+		margin-top: 1.5rem;
+		font-weight: 500;
+	}
+
+	/*for UL*/
+	.navbar .nav-items{
+		float: right;
+		margin-top: 1.5rem;
+	}
+
+
+	li.nav-item{
+		display: inline-block;
+		padding: 0.9em;
+   	}
+/*..............Navbar end...............*/
+
+/*+++++++++++++++++++++++++++++ about style start +++++++++++++++++++++++++++++*/
+	.about-box::after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	.about-us{
+		margin-top: 2rem;
+	}
+
+	.about-us .container .about-box .about-heading{
+		font-size: 2rem;
+		letter-spacing: 0.2em;
+		font-weight: 400;
+		/*border-bottom: 5px solid #e63946;*/
+	}
+
+	.about-heading::after{
+		content: '';
+		display: block;
+		border-bottom: 5px solid #e63946;
+		width: 100%;
+	}
+
+	.about-us .container .about-box .subject{
+		font-size: 1rem;
+		margin-top: 1.7rem;
+		letter-spacing: 0.1em;
+	}
+
+	/*==================list style start===================*/
+		.list-container{
+			max-width: 65rem;
+			width: 85%;
+			margin: 3em auto;
+
+		}
+
+		.block::after{
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		.list-ul{
+			list-style: none;
+		}
+
+		.list:before{
+			content: "\2714\0020";
+			color: #e63946;
+			font-weight: 2rem;
+		}
+
+		.list{
+			font-size: 0.8rem;
+			word-spacing: 0.15em;
+			font-weight: 500;
+			letter-spacing: 0.1em;
+			margin-bottom: 0.2em;
+		}
+
+		.box-list0{
+			float: left;
+			margin-left: 5rem;
+		}
+
+		.box-list1{
+			float: right;
+			margin-right: 5rem;
+		}
+	/*==================list style start===================*/
+
+	/*///////////////////////////count start////////////////////////// */
+		.count::after{
+			margin-top: 3rem;
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		.count-num{
+			width: 25%;
+			float: left;
+			text-align: center;
+			/*border: 2px solid red;*/
+		}
+
+		.count .count-num span{
+			color: #e63946;
+			font-size: 1.4rem;
+			font-weight: 700;
+		}
+
+		.count .count-num p{
+			font-size: 1rem;
+			font-weight: 700;
+		}
+	/*///////////////////////////count end////////////////////////// */
+
+	/*-----------------------------banner start--------------------------*/
+		.banner{
+			padding: 1rem;
+			background: linear-gradient(25deg, #d64c7f, #ee4758 50%);
+			box-shadow: 5px 5px 5px 0px #D2D1D1;
+			color: #f4f4f4;
+			margin-top: 4em;
+		}
+
+		.banner::after{
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		.banner .para{
+			width: 60%;
+			float: left;
+		}
+
+		.banner .para p{
+			font-size: 1rem;
+			word-spacing: 0.1em;
+			letter-spacing: 0.1em;
+			margin-top: 0.6rem;
+		}
+
+
+	/*btn style*/
+		.banner .btn{
+			width: 27%;
+			float: right;
+			border: 3px solid white;
+			text-align: center;
+			/*margin: 0.4em;*/
+		}
+
+		.banner .btn a{
+			display: inline-block;
+			text-decoration: none;
+			color: #f4f4f4;
+			font-size: 1.7rem;
+			font-weight: 700;
+			letter-spacing: 0.3rem;
+		}
+
+	/*-----------------------------banner end--------------------------*/
+/*+++++++++++++++++++++++++++++ about style end +++++++++++++++++++++++++++++++*/

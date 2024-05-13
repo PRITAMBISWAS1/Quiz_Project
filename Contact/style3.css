@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root{
+	font-size: 62.5%;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	color: #444;
+	line-height: 1.7;
+	background: #f0f0f0;
+	scroll-behavior: smooth;
+}
+
+/*#########################################################################*/
+/*.............text-color..............*/
+	.text-red{
+		color: #e63946;
+	}
+
+	.text-white{
+		color: #f4f4f4;
+	}
+
+	.text-black{
+		color: #333;
+	}
+
+	.text-gray{
+		color: #555;
+	}
+/*.............text-color..............*/
+
+/*...............font-size.............*/
+	.navbar .logo{
+			font-size: 2rem;
+	}
+
+	li.nav-item{
+		font-size: 1.7rem;
+	}
+/*...............font-size.............*/
+
+/*................container................*/
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+/*................container................*/
+/*########################################################################*/
+
+/*0000000000000000000000000 Navbar Start 000000000000000000000000000 */
+	/*desktop style*/
+	.navbar-container input[type='checkbox'],
+	.navbar-container .hamburger-lines{
+			display: none;
+		}
+
+	.navbar{
+		box-shadow: 0px 5px 10px 0px #aaa;
+		position: fixed;
+		width: 100%;
+		background: #fff;
+		color: #000;
+		opacity: 0.85;
+		z-index: 999;
+	}
+
+	.navbar-container{
+		display: flex;
+		justify-content: space-between;
+		height: 64px;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.menu-items{
+		order: 2;
+		display: flex;
+	}
+
+	.logo{
+		order: 1;
+		font-size: 3rem;
+	}
+
+	.menu-items li{
+		list-style: none;
+		margin-left: 1.5rem;
+		font-size: 1.8rem;
+	}
+
+	.navbar a{
+		color: #444;
+		text-decoration: none;
+		font-weight: 500;
+		transition: color 0.5s ease-in-out;
+	}
+
+	.navbar a:hover{
+		color: #e33e3e;
+	}
+
+	li a{
+		cursor: progress;
+	}
+/*0000000000000000000000000 Navbar end 000000000000000000000000000 */
+
+/*...............adress-form style start.................*/
+	.contact-form{
+		margin: 8rem 0;
+	}
+
+	.main-div::after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	/************adress style start***********/
+		.body{
+			border: 0.1px solid black;
+		}
+		
+
+		.contact-form .main-div .adress{
+			height: 760px;
+			width: 48%;
+			float: left;
+			background: #f4f4f4;
+		}
+
+		.main-div .adress .company{
+			width: 90%;
+			padding-bottom: 6rem;
+			margin-left: 0.4rem;
+			object-fit: cover;
+			object-position: right;
+		}
+
+		.main-div .adress .adress-group .ad-link, .md-heading{
+			display: inline;
+		}
+	
+		.adress-group .md-heading{
+			font-size: 2.3rem;
+			font-weight: 400;
+			padding-left: 0.5rem;
+		}
+
+		.adress-group .code{
+			font-size: 1.4rem;
+			letter-spacing: 0.1em;
+		}
+
+		.adress-group .ad-link, .code{
+			padding-left: 0.7rem;
+		}
+
+		.adress .adress-group{
+			margin-bottom: 1.4rem;
+		}
+
+
+		/* ---------------map style start---------------- */
+		.map{
+			max-width:100%;
+			overflow:hidden;
+			color:red;
+			width:500px;
+			height:500px;
+		}
+
+		.map-2{
+			height:100%;
+			width:100%;
+			max-width:100%;
+		}
+
+		.map-3{
+			height:100%;
+			width:100%;
+			border:0;
+		}
+		/* ---------------map style end---------------- */
+
+	/*************adress style end***************/
+
+	/*-------------form style start---------------*/
+		.contact-form .main-div .form{
+			height: 760px;
+			width: 48%;
+			float: right;
+			background: #f4f4f4;
+			padding: 0.4rem;
+		}
+
+		.form .f-heading{
+			font-size: 2.3rem;
+			font-weight: 500;
+		}
+
+		.form .f-heading::after{
+			content: '';
+			display: block;
+			border-bottom: 5px solid #e63946;
+			width: 100%;
+		}
+
+		.form .para{
+			font-size: 1.5rem;
+		}
+
+		.form-group{
+			margin: 0.7rem;
+		}
+
+		.form-group .contact-item, .msg{
+			display: block;
+			font-size: 2rem;
+			font-weight: 500;
+		}
+
+		.form-group .contact-item::after{
+			content: '*';
+			display: inline;
+			color: red;
+		}
+
+		.form-group .con-input{
+			width: 95%;
+			height: 3.2rem;
+			font-weight: 500;
+			outline: none;
+		}
+
+		.form-group .text-give{
+			width: 95%;
+			height: 20rem;
+		}
+
+		.formInput{
+			border: none;
+			outline: none;
+		}
+
+		.formInput:focus{
+			box-shadow: none;
+			animation: outline 0.6s  0.1s forwards;
+		}
+
+		@keyframes outline {
+			from{box-shadow: none;}
+    		to{box-shadow: 0px 0px 2px 1.3px rgb(87, 186, 247);}
+
+		}
+	/*form-btn style*/
+		.form .form-btn{
+			display: block;
+			margin: 0 auto;
+			padding: 1.4rem 3rem;
+			background: #e63946;
+			border: none;
+			border-radius: 10px;
+			cursor: pointer;
+		}
+
+		
+	/*-------------form style end----------------*/
+/*..............adress-form style end.....................*/
+
+/*+++++++++++++++++++++ Footer Start +++++++++++++++++++++++++++++++++++*/
+.footer{
+	background-color: #333;
+	height: 17.7vh;
+}
+
+.footer .box-footer .icon{
+	text-align: center;
+	padding: 0.18rem;
+}
+
+.footer .box-footer .icon I{
+	padding: 0.7rem;
+}
+
+.footer .box-footer .icon p{
+	font-size: 0.75rem;
+	word-spacing: 0.3em;
+	font-weight: 500;
+}
+/*+++++++++++++++++++++ Footer end +++++++++++++++++++++++++++++++++++*/

@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 62.5%;
+	color: #444;
+	line-height: 1.7;
+	
+}
+
+:root{
+	scroll-behavior: smooth;
+}
+
+/*#########################################################################*/
+/*.............text-color..............*/
+	.text-white{
+		color: #f4f4f4;
+	}
+
+	.text-black{
+		color: #333;
+	}
+/*.............text-color..............*/
+
+/*...............font-size.............*/
+        .logo{
+			width: 75px;
+            height: 57px;
+		}
+
+		li.nav-item{
+			font-size: 1rem;
+		}
+/*...............font-size.............*/
+/*................container................*/
+.container{
+    max-width: 85rem;
+    width: 90%;
+    margin: 0 auto;
+}
+/*................container................*/
+
+/*................btn start.................*/
+.btn{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: 2px solid;
+    padding: 0.5rem 1.3rem;
+    border-radius: 1rem;
+}
+/*................btn end..................*/
+/*########################################################################*/
+
+/*...............header start................*/
+    .header {
+        background-color: #eeeded;
+        height: 11vh;
+        width: 100%;
+		box-shadow: 0px 0px 20px 0px #515151;
+        position: fixed;
+    }
+
+    .header a{
+        /*color: white;*/
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .header a:hover{
+        text-decoration: underline solid white;
+    }
+
+    li.nav-item{
+        display: inline-block;
+        padding: 1.3em;
+        font-size: 1.2rem;
+    }
+
+    .header ul {
+        float: right;
+    }
+
+    /*for WT*/
+    .header .logo{
+        float: left;
+        margin-top: 1rem;
+    }
+
+/*...............header end.................*/
+
+
+/*................1st-Page Content Style start.............*/
+
+.main{
+       position: static;
+       background: #c6e7fc;
+       padding-top: 15vh;
+       height: 100vh;
+       width: 100%;
+       background-position:center;
+       background-size: cover;
+       background-repeat: no-repeat;
+   }
+
+   .QuestionBox{
+       width: 75%;
+       margin: 1rem;
+       padding: 1rem;
+       font-size: 1rem;
+       background-color: #ffffff;
+       box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.9);
+   }
+
+   #question {
+        font-size: 1.6rem;
+        font-weight: 600;
+   }
+
+    #options {
+        margin-left: 2.5rem;
+        width: 75%;
+   }
+
+   #options .option {
+        display: block;
+        margin: 15px;
+        padding: 7px;
+        font-size: 1.4rem;
+        background-color: #ffffff;
+        box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.9);
+   }
+
+   #options .option:hover {
+    background-color: #e5e5e5;
+   }
+
+    input[type="radio"] {
+        display: inline-block;
+        vertical-align: center;
+        width: 20px;
+        height: 20px;
+        margin-right: 3px;
+    }
+
+    #progress {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+   /* ---------------------button sec--------------------- */
+       .button-container {
+              display: flex;
+              justify-content: space-around;
+              width: 75%;
+              margin-top: 2rem;
+       }
+
+       .btn1:hover {
+              background-color: #f57676;
+              border: none;
+       }
+       .btn2:hover {
+              background-color: rgb(255, 255, 255);
+              border: none;
+       }
+       .btn3:hover {
+              background-color: #82f288;
+              border: none;
+       }
+
+       .btn4{
+            background-color: #82f288;
+       }
+   /* ---------------------button sec--------------------- */
+    
+    #result {
+        margin: 5rem;
+        font-size: 2rem;
+        border: 2px solid;
+        padding: 2rem;
+        background-color: #f5f4f4;
+   }
+   .btn5 { 
+        font-size: 2rem;
+        border: 2px solid;
+        padding: 2rem;
+        background-color: #f5f4f4;
+   }
+/*................1st-Page Content Style end.............*/

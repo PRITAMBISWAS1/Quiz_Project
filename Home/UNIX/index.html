@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <script src="https://kit.fontawesome.com/31b983c525.js" crossorigin="anonymous"></script>
+       <meta name="description" content="this is tutorial">
+       <meta name="author" content="Pritam Biswas">
+       <link rel="Stylesheet" type="text/css" href="style.css">
+       <title>Solve QUIZ</title>
+</head>
+<body>
+       <!--///////////////////////----Header start----/////////////////////////////--->
+	<header class="header">
+              <div class="container">
+                  <img src="../../IMG/unix.png" alt="It is UNIX logo" class="logo">
+                  <ul class="nav-items">
+                      <li class="nav-item"><a href="../../index.html" class="text-black">HOME</a></li>
+                  </ul>
+              </div>
+          </header>
+          <!--/////////////////////////----Header end-----/////////////////////////////--->
+
+<div class="main page1">
+       <div class="container" id = "mainStyle">
+              <div class="QuestionBox quiz-container">
+                     <div id="progress"></div>
+                     <div id="question">
+                     </div>
+                     <div id="options">
+                            <!-- Options will be dynamically added here -->
+                     </div>
+              </div>
+              <div class="button-container">
+                     <button class="btn btn1" onclick="prevQuestion()">Previous</button>
+                     <button id="submit" class="btn btn4" onclick="submitQuiz()" disabled>Submit</button>
+                     <button class="btn btn3" onclick="nextQuestion()">Next</button>
+              </div>
+
+       </div>
+       <div id="result" style="display: none;"></div> <!-- Initially hidden -->
+       <button id="retry" class="btn btn5" onclick="retryQuiz()" style="display: none;">Retry</button> <!-- Retry button initially hidden -->
+
+</div>
+       
+
+<script src="script.js"></script>
+</body>
+</html>
